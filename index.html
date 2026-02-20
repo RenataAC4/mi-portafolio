@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renata M Arreguin Covarubias vet</title>
+    
+    <style>
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: white;
+        }
+
+        header h1 { margin: 0; font-size: 2.5rem; }
+
+        nav {
+            background-color: #0097a7;
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* --- AQUÍ ESTÁ EL CAMBIO DE TU IMAGEN --- */
+        .welcome-hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('oip.webp'); /* Usamos tu archivo local */
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .welcome-hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .btn-comencemos {
+            background-color: #ffc107;
+            color: #333;
+            padding: 15px 45px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .main-box {
+            max-width: 1000px;
+            margin: -60px auto 40px;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        h3 { text-align: center; font-size: 1.8rem; margin-bottom: 40px; color: #0097a7; }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .circle {
+            background-color: #ffc107;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .contact-container {
+            background-color: #616161;
+            padding: 40px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .form-title {
+            text-align: center;
+            color: #ffc107;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .field { margin-bottom: 20px; }
+        .field label { display: block; margin-bottom: 8px; }
+        .field input, .field textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        .btn-submit-container { text-align: right; }
+        .btn-send {
+            background-color: #0097a7;
+            color: white;
+            border: none;
+            padding: 12px 50px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer { text-align: center; padding: 20px; color: #666; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Renata M Arreguin Covarubias <span>vet</span></h1>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Clientes</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <section class="welcome-hero">
+        <h2>Hola, soy Renata M Arreguin Covarubias</h2>
+        <a href="#main-content" class="btn-comencemos">Comencemos</a>
+    </section>
+
+    <div class="main-box" id="main-content">
+        <h3>Mis Servicios</h3>
+        <div class="services-grid">
+            <div class="service-card">
+                <h4>Diseño Web</h4>
+                <div class="circle">🎨</div>
+                <p>Creación de sitios web visualmente atractivos, modernos y totalmente personalizados.</p>
+            </div>
+            <div class="service-card">
+                <h4>Aplicaciones Web</h4>
+                <div class="circle">📱</div>
+                <p>Desarrollo de herramientas digitales interactivas diseñadas para resolver problemas específicos. Desde sistemas de gestión interna hasta plataformas para usuarios, priorizando siempre la velocidad y la facilidad de uso.</p>
+            </div>
+            <div class="service-card">
+                <h4>E-Commerce</h4>
+                <div class="circle">💳</div>
+                <p>Diseño y montaje de tiendas en línea seguras y eficientes. Configuro todo lo necesario para que tus clientes puedan comprar tus productos de forma fácil, con carritos de compra optimizados para maximizar tus ventas.</p>
+            </div>
+        </div>
+
+        <section id="contacto" class="contact-container">
+            <p class="form-title">CONTACTÁNOS LLENANDO TODOS LOS CAMPOS</p>
+            <form>
+                <div class="form-grid">
+                    <div class="field">
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Tu Nombre">
+                    </div>
+                    <div class="field">
+                        <label>Teléfono</label>
+                        <input type="tel" placeholder="Tu Teléfono">
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Correo</label>
+                    <input type="email" placeholder="Tu Email">
+                </div>
+                <div class="field">
+                    <label>Mensaje</label>
+                    <textarea rows="5"></textarea>
+                </div>
+                <div class="btn-submit-container">
+                    <button type="button" class="btn-send">ENVIAR</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>Todos los derechos reservados. Renata M Arreguin Covarubias vet</p>
+    </footer>
+
+</body>
+</html>
